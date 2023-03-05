@@ -88,8 +88,9 @@ jobs:
               -D BUILD_PACKAGE=OFF \
               -D BUILD_opencv_python2=OFF \
               -D BUILD_opencv_python3=OFF \
-              -D BUILD_opencv_apps=OFF \
+              -D BUILD_opencv_apps=ON \
               -D BUILD_opencv_gapi=OFF \
+              -D BUILD_opencv_aruco=ON \
               -D CMAKE_BUILD_TYPE=RELEASE \
               ..
             make -j4
@@ -194,9 +195,10 @@ jobs:
               -D BUILD_PACKAGE=OFF \
               -D BUILD_opencv_python2=OFF \
               -D BUILD_opencv_python3=OFF \
-              -D BUILD_opencv_apps=OFF \
+              -D BUILD_opencv_apps=ON \
               -D BUILD_opencv_gapi=OFF \
               -D CMAKE_BUILD_TYPE=RELEASE \
+              -D BUILD_opencv_aruco=ON \
               ..
             make -j4
 
